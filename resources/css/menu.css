@@ -1,0 +1,30 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--gris-pale);
+    gap: var(--espace-moyen);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu div {
+    margin-right: var(--espace-grand);
+}
+.menu div a {
+    padding: var(--espace-petit);
+}
+
+.menu a:hover {
+    background-color: var(--gris-fonce);
+    color: var(--blanc);
+} 
+
+.menu picture{
+    margin: var(--espace-tres-petit) var(--espace-grand);
+}
+
+.menu img {
+    width: var(--espace-grand);
+    height: var(--espace-grand);
+    
+}

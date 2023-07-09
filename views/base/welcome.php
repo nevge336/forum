@@ -1,2 +1,2 @@
-<h1>Bienvenue!</h1>
-<p>Mon quadriciel MVC</p>
+<p>Bienvenue!</p>
+<h1>Mon quadriciel MVC</h1>

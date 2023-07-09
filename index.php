@@ -13,7 +13,9 @@ $controller_file = 'controllers/'.ucfirst($module).'Controller.php';
 
 if(!file_exists($controller_file)){
     trigger_error('Invalid Controller');
-    exit; //pour tp - faire sortir dans controller base - action error (c'est ca qu'on appelle ici)
+    exit; 
+    
+//pour tp - faire sortir dans controller base - action error (c'est ca qu'on appelle ici)
 
 }
 
