@@ -16,7 +16,7 @@ img {
 }
 
 /* pour éviter l'espace sous l'image dans les flex*/
-picture img {
+header img {
 	display: block;
 	min-height: 100%;
 	object-fit: cover;

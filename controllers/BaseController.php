@@ -6,7 +6,7 @@ function base_controller_index() {
 }
 
 function base_controller_error() {
-    render(VIEW_DIR. 'base/error.php');
+    render(VIEW_DIR. '/base/error.php');
 }
 
 

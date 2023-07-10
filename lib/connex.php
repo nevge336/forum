@@ -4,7 +4,7 @@
 $host = 'localhost';
 $username = 'root';
 $password = '';
-$dbname = 'store';
+$dbname = 'forum';
 $port = 3306;
 
 $connex = mysqli_connect($host, $username, $password, $dbname, $port);

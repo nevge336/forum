@@ -1,3 +1,8 @@
 h1 {
     font-size: var(--police-tres-grand);
 }
+
+
+a {
+    font-size: var(--police-tres-petit);
+}

@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MVC</title>
+    <title>Forum de Maisonneuve</title>
     <link rel="stylesheet" href="resources/css/main.css">
 </head>
 <body>
     <nav>
         
         <div class="menu">
-            <picture>
-                <a href="index.php"><img src="./resources/img/logo-forum.svg" alt="logo"></a>
-            </picture>
+            <header>
+                <a href="index.php">
+                    <img src="./resources/img/logo-forum.svg" alt="logo">
+                </a>
+                <p>Forum de Maisonneuve</p>
+            </header>
             <div>
                 <a href="index.php">Accueil</a>
-                <a href="?module=user&action=index">Lister les utilisateurs</a>
-                <a href="?module=user&action=create">Ajouter un utilisateur</a>
+                <a href="?module=article&action=index">Tous les articles</a>
+                <a href="?module=user&action=create">Créer un compte</a>
             </div>
         </div>
     </nav>

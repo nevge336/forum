@@ -53,9 +53,9 @@
 	--colonne: 30ch;
 
 	/* grandeurs de police */
-	--police-tres-petit: clamp(14px, 2vw, 18px); /*15px;*/
-	--police-petit: clamp(16px, 3vw, 20px); /* 18px; */
-	--police-moyen-petit: clamp(18px, 2vw, 24px); /*24px */
+	--police-tres-petit: clamp(14px, 1.3vw, 18px); /*15px;*/
+	--police-petit: clamp(16px, 2vw, 20px); /* 18px; */
+	--police-moyen-petit: clamp(18px, 5vw, 24px); /*24px */
 	--police-moyen: clamp(18px, 3vw, 30px); /*30px*/
 	--police-moyen-grand: clamp(20px, 4vw, 35px); /*35px*/
 	--police-grand: clamp(25px, 4vw, 40px); /* 40px*/
