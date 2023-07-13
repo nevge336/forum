@@ -4,11 +4,13 @@
 
 <div class="box">
     <?php foreach($data as $row) {?>
-        <div class= "box-box">
-            <small><?= $row['date'] ?></small>
+        <div>
+            <div class="box-box">
+                <small>auteur: <?= $row['name'] ?></small>
+                <small><?= $row['date'] ?></small>
+            </div>
             <h3><?= $row['title'] ?></h3>
             <p><?= $row['post'] ?></p>
         </div>
     <?php } ?>
 </div>
-        

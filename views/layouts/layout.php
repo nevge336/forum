@@ -17,9 +17,11 @@
                 <p>Forum de Maisonneuve</p>
             </header>
             <div>
-                <a href="index.php">Accueil</a>            
+                <a href="index.php">Accueil</a>
+                          
                 <a href="?module=user&action=create">Créer un compte</a>
-                <a href="?module=user&action=login">Login</a>
+                <a href="?module=user&action=dashboard">Mon espace</a>
+               
             </div>
         </div>
     </nav>

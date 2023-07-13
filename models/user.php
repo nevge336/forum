@@ -20,7 +20,7 @@ function user_model_store($request) {
 } 
 
 
-
+/*
 function user_model_userid(){
     require(CONNEX_DIR);
     $sql = "SELECT userId FROM user";
@@ -28,18 +28,11 @@ function user_model_userid(){
     $result = mysqli_fetch_assoc($result, MYSQLI_ASSOC);
     mysqli_close($connex);
     return $result;
-}
+}*/
 
 
 
-function user_model_list(){
-    require(CONNEX_DIR);
-    $sql = "SELECT * FROM user ORDER BY userId";
-    $result  = mysqli_query($connex, $sql);
-    $result = mysqli_fetch_all($result, MYSQLI_ASSOC);
-    mysqli_close($connex);
-    return $result;
-}
+
 
 
 
@@ -81,21 +74,20 @@ function user_model_authentication($request) {
 
 function user_model_logout($request) {
     session_destroy();
-    render(VIEW_DIR);
 }
 
 
 
 function user_model_checksession($request) {
-    require(CONNEX_DIR);
+    $result = false;
+
     if(isset($_SESSION['finger_print']) && $_SESSION['finger_print'] === md5($_SERVER['HTTP_USER_AGENT'].$_SERVER
     ['REMOTE_ADDR'].'%442@5435H*#4s23!')) {
-        $name_session = $_SESSION['name'];
-    } else {
-        header("Location: ?module=user&action=login");
-        die();
+
+        $result = true;
     }
-    mysqli_close($connex);
+
+    return $result;
 }
 
 

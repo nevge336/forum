@@ -6,7 +6,7 @@
 
 <form action="?module=user&action=authentication" method="post">
 
-    <label for="username">Nom d'utilisateur : (courriel)</label>
+    <label for="username">Courriel</label>
     <input type="email" id="username" name="username" required>
     
     <label for="password">Mot de passe :</label>

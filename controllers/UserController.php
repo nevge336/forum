@@ -53,7 +53,12 @@ function user_controller_authentication($request) {
 function user_controller_dashboard($request) {
     require_once(MODEL_DIR.'/user.php');
     $result = user_model_checksession($request);
-    render(VIEW_DIR.'/user/dashboard.php');
+    if($result == true) {
+        render(VIEW_DIR.'/user/dashboard.php');
+    } else {
+        header("Location: ?module=user&action=login");
+    }
+    
 }
 
 
@@ -61,6 +66,7 @@ function user_controller_dashboard($request) {
 function user_controller_logout($request) {
     require_once(MODEL_DIR.'/user.php');
     user_model_logout($request);
+    header("Location: ?module=base&action=index");
 }
 
 

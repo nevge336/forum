@@ -3,12 +3,11 @@
 <nav>
     <div class="bouton">
         <a href="?module=article&action=create">Créer un article</a>
-        <a href="?module=article&action=userindex">Liste de vos publications</a>
+        <a href="?module=article&action=index">Liste de vos publications</a>
         <a href="?module=user&action=logout">Logout</a>
     </div>
 </nav>
 <form class="maxwidth40ch" action="?module=article&action=store" method="post">
-<input type="hidden" name="userId" value="<?php echo $data['user']['userId'];?>">
 
   <label for="title">Titre :</label>
   <input type="text" id="title" name="title" required>
