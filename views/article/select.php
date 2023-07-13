@@ -1,4 +1,12 @@
-<h1>Liste des articles</h1>
+
+<h1>Liste de vos publications</h1>
+<nav>
+    <div class="bouton">
+        <a href="?module=article&action=create">Créer un article</a>
+        <a href="?module=article&action=index">Liste de vos publications</a>
+        <a href="?module=user&action=logout">Logout</a>
+    </div>
+</nav>
 <table>
     <thead>
         <tr>
@@ -13,7 +21,7 @@
             <tr>
                 <td><?= $row['title']; ?></td>
                 <td><?= $row['date']; ?></td>
-                <td><a href="?module=article&action=show&id=<?= $row['id'] ?>">Edit</a></td>
+                <td><a href="?module=article&action=view&id=<?= $row['articleId'] ?>">Edit</a></td>
             </tr>
 
             <?php } ?>

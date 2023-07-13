@@ -17,9 +17,9 @@
                 <p>Forum de Maisonneuve</p>
             </header>
             <div>
-                <a href="index.php">Accueil</a>
-                <a href="?module=article&action=index">Tous les articles</a>
+                <a href="index.php">Accueil</a>            
                 <a href="?module=user&action=create">Créer un compte</a>
+                <a href="?module=user&action=login">Login</a>
             </div>
         </div>
     </nav>

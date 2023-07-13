@@ -1,2 +1,3 @@
-<p>Bienvenue!</p>
-<h1>Mon quadriciel MVC</h1>
+
+<h1>Bienvenue!</h1>
+<h2>Le forum des étudiants du Collège de Maisonneuve</h2>
