@@ -78,10 +78,13 @@ function user_model_authentication($request) {
 }
 
 
+
 function user_model_logout($request) {
     session_destroy();
     render(VIEW_DIR);
 }
+
+
 
 function user_model_checksession($request) {
     require(CONNEX_DIR);

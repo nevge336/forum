@@ -3,6 +3,8 @@
 
 
 function article_controller_create(){
+    require_once(MODEL_DIR.'/user.php');
+    $result = user_model_checksession($request);
     render(VIEW_DIR.'/article/create.php');
 }
 
@@ -18,8 +20,15 @@ function article_controller_store($request){
 }
 
 
-
 function article_controller_index(){
+
+}
+
+
+
+function article_controller_userindex(){
+    require_once(MODEL_DIR.'/user.php');
+    $result = user_model_checksession($request);
     require_once(MODEL_DIR.'/article.php');
     $data =  article_model_list();
     render(VIEW_DIR.'/article/select.php', $data);
@@ -36,11 +45,14 @@ function article_controller_view($request){
 }
 
 
+
 function article_controller_edit($request) {
     require_once(MODEL_DIR.'/article.php');
     article_model_edit($request);
     header("Location: ?module=article&action=index");
 }
+
+
 
 function article_controller_delete($request) {
     require_once(MODEL_DIR.'/article.php');
