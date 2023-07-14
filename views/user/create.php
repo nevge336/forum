@@ -12,7 +12,7 @@
   <input type="password" id="password" name="password" required>
 
   <label for="birthday">Date de naissance :</label>
-  <input type="text" id="birthday" name="birthday" required>
+  <input type="date" id="birthday" name="birthday" required>
   
   <input type="submit" value="Créer">
 </form>

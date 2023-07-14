@@ -57,7 +57,7 @@ function user_model_authentication($request) {
         
         if(password_verify($password, $dbPassword)) {
             session_regenerate_id();
-            $_SESSION['id'] = $user['id'];
+            $_SESSION['id'] = $user['userId'];
             $_SESSION['name'] = $user['name'];
             $salt = '%442@5435H*#4s23!';
             $_SESSION['finger_print'] = md5($_SERVER['HTTP_USER_AGENT'].$_SERVER['REMOTE_ADDR'].$salt);
@@ -79,14 +79,13 @@ function user_model_logout($request) {
 
 
 function user_model_checksession($request) {
-    $result = false;
-
+   
     if(isset($_SESSION['finger_print']) && $_SESSION['finger_print'] === md5($_SERVER['HTTP_USER_AGENT'].$_SERVER
     ['REMOTE_ADDR'].'%442@5435H*#4s23!')) {
-
-        $result = true;
+       $result = true;
+    } else {
+       $result = false;
     }
-
     return $result;
 }
 
